@@ -51,3 +51,22 @@ limsup <- mean(vazao_nilo)+1.5 * amplitude
 liminf <- mean(vazao_nilo)-1.5 * amplitude
 abline(limsup,0,col="blue")
 abline(liminf,0,col="blue")
+
+fj <- c(24,27,29,30,32,58,64,64,65)
+cp <- c(10,25,20,36,28,38,50,60,69)
+cor(fj,cp)
+cor(cp,fj)
+
+capacidade <- c(14,13,14,13,16,NA,NA,20,NA)
+mean(capacidade)
+mean(capacidade, na.rm = TRUE)
+sum(capacidade)
+sum(capacidade, na.rm = TRUE)
+90/6
+is.na(capacidade)
+
+install.packages("modeest")
+library(modeest)
+score <- c(1,2,2,2,3,4,4,4,5)
+moda <- mfv(score)
+print(moda)
